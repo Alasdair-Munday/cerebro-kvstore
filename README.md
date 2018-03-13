@@ -8,4 +8,4 @@ The results are a list of matches to the entered key. If the exact key you've en
 
 If you want to remove a key from the store, simply remove the value in the preview and it should stop showing up in your searches.
 
-![screenshot](/screen.png)
+![screenshot](/screenshot.png)
