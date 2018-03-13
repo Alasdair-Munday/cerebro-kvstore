@@ -1,0 +1,12 @@
+.wrapper {
+  align-self: flex-start;
+  width: 100%;
+  position: relative;
+  transition: all .3s linear;
+}
+.text {
+  width: 100%;
+  height: 440px;
+  margin: 0;
+  padding: 0;
+}

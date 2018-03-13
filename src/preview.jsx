@@ -1,4 +1,6 @@
-const React = require('react');
+const React = require('react')
+const styles = require('./styles.css')
+
 module.exports = ({key, value, change, save, remove}) => {
     const onBlur = () => {
         if (value == '') {
@@ -8,15 +10,9 @@ module.exports = ({key, value, change, save, remove}) => {
         }
     };
 
-    const styles = {
-        'min-width': '300px',
-        'min-height': '800px'
-    }
-
     return(
-        <div key={key} styles={styles}>
-          <textarea name="body" onChange={({target}) => change(target.value)} onBlur={onBlur} value={value}/>
-          <div>{value}</div>
+        <div key={key} className={styles.wrapper}>
+          <textarea className={styles.text} name="body" onChange={({target}) => change(target.value)} onBlur={onBlur} value={value}/>
         </div>
     )
 }
